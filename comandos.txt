@@ -1,0 +1,10 @@
+npx sequelize-cli init - inicia
+npx sequelize db:create -cria banco de dados 
+npx sequelize-cli migration:generate --name user_roles   //criar tabela
+
+npx sequelize db:migrate  //migra todas tabelas  para o banco
+npx sequelize-cli db:migrate --to 20220330164034-ordens_pedidos.js//migra apenas 1 tabela 
+
+nodemon server.js //roda servidor
+
+git push -u origin main        
